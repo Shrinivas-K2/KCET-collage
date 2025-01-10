@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCET College Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KCET Predictor</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#predict">Predict</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing-content">
+            <h1>Welcome to KCET College Predictor</h1>
+            <p>Predict your chances of getting into your dream college based on your KCET rank.</p>
+            <a href="#predict" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our tool helps students predict their chances of college allocation based on their KCET ranks and categories. Start now to plan your future better!</p>
+    </section>
+    <section id="predict">
+        <h2>Predict Your College</h2>
+        <form id="predictor-form">
+            <label for="rank">Enter your KCET Rank:</label>
+            <input type="number" id="rank" name="rank" placeholder="Your Rank" required>
+            <label for="category">Select your Category:</label>
+            <select id="category" name="category" required>
+                <option value="1G">1G</option>
+                <option value="1K">1K</option>
+                <option value="1R">1R</option>
+                <option value="2AG">2AG</option>
+                <option value="2AK">2AK</option>
+                <option value="2AR">2AR</option>
+                <option value="2BG">2BG</option>
+                <option value="2BK">2BK</option>
+                <option value="2BR">2BR</option>
+                <option value="3AG">3AG</option>
+                <option value="3AK">3AK</option>
+                <option value="3AR">3AR</option>
+                <option value="3BG">3BG</option>
+                <option value="3BK">3BK</option>
+                <option value="3BR">3BR</option>
+                <option value="GM">GM</option>
+                <option value="GMK">GMK</option>
+                <option value="GMR">GMR</option>
+                <option value="SCG">SCG</option>
+                <option value="SCK">SCK</option>
+                <option value="SCR">SCR</option>
+                <option value="STG">STG</option>
+                <option value="STK">STK</option>
+                <option value="STR">STR</option>
+            </select>
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="result"></div>
+
+        <div class="category-info">
+            <h3>Category Explanations</h3>
+            <div class="category-bubbles">
+                <span class="bubble"><strong>1G</strong>: General Merit</span>
+                <span class="bubble"><strong>1K</strong>: Kannada Medium</span>
+                <span class="bubble"><strong>1R</strong>: Rural</span>
+                <span class="bubble"><strong>2AG</strong>: 2A General</span>
+                <span class="bubble"><strong>2AK</strong>: 2A Kannada Medium</span>
+                <span class="bubble"><strong>2AR</strong>: 2A Rural</span>
+                <span class="bubble"><strong>2BG</strong>: 2B General</span>
+                <span class="bubble"><strong>2BK</strong>: 2B Kannada Medium</span>
+                <span class="bubble"><strong>2BR</strong>: 2B Rural</span>
+                <span class="bubble"><strong>3AG</strong>: 3A General</span>
+                <span class="bubble"><strong>3AK</strong>: 3A Kannada Medium</span>
+                <span class="bubble"><strong>3AR</strong>: 3A Rural</span>
+                <span class="bubble"><strong>3BG</strong>: 3B General</span>
+                <span class="bubble"><strong>3BK</strong>: 3B Kannada Medium</span>
+                <span class="bubble"><strong>3BR</strong>: 3B Rural</span>
+                <span class="bubble"><strong>GM</strong>: General Merit</span>
+                <span class="bubble"><strong>GMK</strong>: General Merit Kannada Medium</span>
+                <span class="bubble"><strong>GMR</strong>: General Merit Rural</span>
+                <span class="bubble"><strong>SCG</strong>: Scheduled Caste General</span>
+                <span class="bubble"><strong>SCK</strong>: Scheduled Caste Kannada Medium</span>
+                <span class="bubble"><strong>SCR</strong>: Scheduled Caste Rural</span>
+                <span class="bubble"><strong>STG</strong>: Scheduled Tribe General</span>
+                <span class="bubble"><strong>STK</strong>: Scheduled Tribe Kannada Medium</span>
+                <span class="bubble"><strong>STR</strong>: Scheduled Tribe Rural</span>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; 2025 KCET College Predictor. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
